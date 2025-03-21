@@ -1,0 +1,272 @@
+/* Общие стили */
+body {
+    overflow-x: hidden; /* Скрывает контент, выходящий за пределы */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #3399ff; /* Основной цвет ссылок */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+a:hover {
+    color: #207ae0; /* Более темный оттенок синего при наведении */
+}
+
+/* Header */
+header {
+    position: relative;
+    color: white;
+}
+
+.hero-image {
+    height: 500px;
+    display: flex;
+    flex-direction: column;  /*Для правильного позиционирования nav*/
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.hero-text {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 0.7em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Чтобы навигация всегда была поверх контента */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.2em;
+    transition: color 0.3s ease;
+    display: inline-block; /*Чтобы transition работал корректно*/
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Weather Section */
+#weather {
+    text-align: center;
+    padding: 2em;
+    background-color: #e9ecef; /* Более светлый серый */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    border-radius: 10px; /* Скругленные углы */
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Для адаптивности на маленьких экранах */
+}
+
+.weather-icon {
+    margin-right: 1em;
+    color: #f39c12;
+    font-size: 3em; /* Уменьшен размер иконки */
+}
+
+.weather-info {
+    text-align: left; /* Выравнивание текста слева */
+}
+
+.weather-info p {
+    margin: 0.3em 0;
+    font-size: 1em;
+}
+
+.temperature {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.condition {
+    font-size: 1em;
+    color: #777;
+}
+
+.details {
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Excursions Sections */
+#popular-excursions,
+#city-excursions {
+    padding: 2em;
+    text-align: center;
+}
+
+#city-excursions h2 {
+    margin-bottom: 1em;
+}
+
+.excursion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.excursion-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.excursion-card:hover {
+    transform: translateY(-5px);
+}
+
+.excursion-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /*Анимация при наведении*/
+}
+
+.excursion-card:hover img{
+    transform: scale(1.1); /*Увеличение картинки при наведении*/
+}
+
+.excursion-card h3 {
+    padding: 0.8em;
+    font-size: 1.2em;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.excursion-card p {
+    padding: 0.8em;
+    text-align: left;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.price {
+    font-weight: 500;
+    color: #27ae60;
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.contact-info {
+    width: 30%;
+    min-width: 250px;
+    text-align: left;
+}
+
+/* Media Queries (Адаптивность) */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 400px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.1em;
+    }
+
+    nav a {
+        margin: 0 0.5em;
+    }
+
+    .weather-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .weather-icon {
+        margin-right: 0; /* Убираем отступ для центрирования */
+        margin-bottom: 0.5em; /* Добавляем отступ снизу */
+    }
+
+    .weather-info {
+        text-align: center; /*Центрируем текст на маленьких экранах*/
+    }
+
+    .excursion-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+
+/* Small screens (e.g., mobile phones) */
+@media (max-width: 576px) {
+    .hero-image {
+        height: 300px; /* Еще меньше на маленьких экранах */
+    }
+
+    .hero-text h1 {
+        font-size: 2em; /* Еще меньше на маленьких экранах */
+    }
+
+    nav a {
+        display: block; /* Ссылки навигации занимают всю ширину */
+        margin: 0.5em 0; /* Отступы сверху и снизу */
+    }
+}
