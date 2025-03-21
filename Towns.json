@@ -1,0 +1,434 @@
+[
+    {
+        "title": "Историческая прогулка по Москве от древности до наших дней ",
+        "text": "Как менялся город и кто влиял на эти изменения",
+        "price": " 5000 ₽ ",
+        "img_url": "https://resize.tripster.ru/L2XjxU0yNbvRQdX4xG0Qxo27yRg=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/0fe04916-f875-4d70-b73c-235eaf58e78c.jpg",
+        "reviews": " 229 отзывов ",
+        "rating": "4.95"
+    },
+    {
+        "title": "Обзорная пешеходная экскурсия по Москве ",
+        "text": "Прогулка по историческому центру, идеально подходящая для первого свидания с городом",
+        "price": " 900 ₽ ",
+        "img_url": "https://resize.tripster.ru/-rUt7hsSlCRqU8KoqGs9HYQvIZ4=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/f2bdadba-f9fe-40c8-a374-f4906d84ecae.jpg",
+        "reviews": " 18 отзывов ",
+        "rating": "4.83"
+    },
+    {
+        "title": "Иммерсивная прогулка по Москве «Город счастливых» ",
+        "text": "Увидеть столицу новым взглядом (и заново влюбиться!), слушая ее голос и следуя за персонажами",
+        "price": " 2200 ₽ ",
+        "img_url": "https://resize.tripster.ru/tRczSL-MYJz5A-z7mwkNxTeC65g=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/0482f098-26c8-40a2-a769-b0b3cd2060ad.jpg",
+        "reviews": " 9 отзывов ",
+        "rating": "4.78"
+    },
+    {
+        "title": "Роскошь старого московского метро: 15 самых красивых станций ",
+        "text": "В почти дворцовых интерьерах разглядеть истории людей — и страны, в которой они жили",
+        "price": " 2000 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/ff1b01a2-de2b-11ef-9bd3-1ebb7abe3de0.800x600.jpeg",
+        "reviews": " 8 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Хитровка: криминальная аристократия Москвы. По следам Эраста Фандорина ",
+        "text": "Оживить страницы романа и через литературный источник узнать о районе с темным прошлым",
+        "price": " 7200 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/baffc7d0-d194-11ef-8983-0a786f7e6753.600x800.jpeg",
+        "reviews": " 5 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Мастер-класс по керамике в самом сердце Москвы ",
+        "text": "Погрузиться в расслабляющий и творческий процесс лепки (в мини-группе)",
+        "price": " 3500 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/b800310a-10a6-11ef-a5a9-7ac48fd9dec5.600x800.jpeg",
+        "reviews": " 9 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Северный речной вокзал: экскурсия с фотографом ",
+        "text": "Полюбоваться видами канала Москва-Волга и запечатлеть себя в одном из самых атмосферных мест столицы",
+        "price": " 6700 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/edc1113c-e514-11ee-9270-3238bbf9a0f8.600x800.jpeg",
+        "reviews": " 10 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Крутицкое подворье и Новоспасский монастырь ",
+        "text": "Очароваться уголком старой Москвы и погрузиться в историю государства",
+        "price": " 5990 ₽ ",
+        "img_url": "https://resize.tripster.ru/FThmrpT1df19HB9Edp4_OC7YT48=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/ba347b40-2316-45bc-8168-b3125fab34ad.jpg",
+        "reviews": " 34 отзыва ",
+        "rating": "4.82"
+    },
+    {
+        "title": "Спектакль-экскурсия «Заблудшие в Национале» ",
+        "text": "Перенестись в изысканную атмосферу фешенебельного отеля и разгадать его тайны",
+        "price": " 6300 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/65621758-140b-11ee-b604-1236fdc67eb4.800x600.jpeg",
+        "reviews": " 9 отзывов ",
+        "rating": "4.78"
+    },
+    {
+        "title": "Третьяковская галерея: загадки великих шедевров ",
+        "text": "Увлекательная экскурсия по музею для путешественников всех возрастов (для 2 человек максимум)",
+        "price": " 8000 ₽ ",
+        "img_url": "https://resize.tripster.ru/BY06eA6OX8_Lve8tMVHWpx6dvuw=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/222932f9-836e-4362-8486-e3aa1d0c3f7e.jpg",
+        "reviews": " 86 отзывов ",
+        "rating": "4.84"
+    },
+    {
+        "title": "В окрестностях Кремля: Пречистенка и Волхонка. Индивидуальная экскурсия ",
+        "text": "По главным улицам музейного квартала в Хамовниках в поисках архитектурных чудес",
+        "price": " 4500 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/e166e988-c9ea-11ee-84df-6a89e2eb1b43.800x600.jpeg",
+        "reviews": " 23 отзыва ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Петля времени: прогулка по посёлку художников «Сокол» ",
+        "text": "Исследовать любопытный советский эксперимент: дачные дома в окружении сталинских высоток",
+        "price": " 5400 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/2f705dbe-c8eb-11ed-8c7a-c2a8d577948d.800x600.jpeg",
+        "reviews": " 20 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Большое путешествие по ВДНХ. Групповая экскурсия ",
+        "text": "Увидеть павильоны, которых уже нет, и узнать больше о тех, что сохранились",
+        "price": " 1500 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/0b793c18-4b31-11ef-ba26-ae9ec7b8c3db.800x600.jpeg",
+        "reviews": " 10 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Ресторанная Москва на рубеже 19–20 веков ",
+        "text": "Узнать, что ели, пили и как кутили в дореволюционных ресторанах",
+        "price": " 4000 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/acd78aa4-d382-11ef-af53-1ac79eb4ae9b.600x800.jpeg",
+        "reviews": " 11 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Фотосессия и экскурсия по парку «Царицыно» ",
+        "text": "Познакомиться с историей дворцово-паркового ансамбля и получить профессиональные снимки на память",
+        "price": " 6375 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/ec27c0ae-6a63-11ee-bca0-caaae4b485c5.800x600.jpeg",
+        "reviews": " 12 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Московские истории с итальянским акцентом ",
+        "text": "Разглядеть следы средиземноморской страны в сердце города и узнать, как она повлияла на его судьбу",
+        "price": " 5900 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/c2e78af0-cd81-11ed-9add-2a51ca97d1f7.800x600.jpeg",
+        "reviews": " 15 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "История в бокале: легенды Хитровки и необычные питейные места. Индивидуальная экскурсия ",
+        "text": "Уникальные питейные места и захватывающие легенды одного из самых опасных районов 19 века",
+        "price": " 9500 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/f848bf9a-a0ba-11ee-a867-426359890175.800x600.jpeg",
+        "reviews": " 108 отзывов ",
+        "rating": "4.99"
+    },
+    {
+        "title": "История Москвы от XII до XXI века на примере одной улицы ",
+        "text": "Прогулка по Сретенке с коренным москвичом",
+        "price": " 5000 ₽ ",
+        "img_url": "https://resize.tripster.ru/EXGcvpEMk_jBBdX8LOHGitZ3MB8=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/a25db484-94ae-4231-82a8-e11a8ae4af45.jpg",
+        "reviews": " 100 отзывов ",
+        "rating": "4.88"
+    },
+    {
+        "title": "Ивановская горка: старинные дома, дворы и модные кафе ",
+        "text": "Боярские усадьбы, арт-кластер Хохловка, антикварный паб и купеческие особняки на авторской экскурсии",
+        "price": " 7000 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/58ff8b2a-04b7-11ee-b31f-92085215141d.800x600.jpeg",
+        "reviews": " 18 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Экскурсия в интерактивном музее в темноте «СЕНСОРИУМ» ",
+        "text": "За 1 час узнать, как выглядит мир для тех, кто его не видит",
+        "price": " 2000 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/d68105ba-256e-11ee-84fc-b647542af0ca.800x600.jpeg",
+        "reviews": " 27 отзывов ",
+        "rating": "4.96"
+    },
+    {
+        "title": "Китайгородские сказки — интерактивный квест! ",
+        "text": "Перенестись в купеческую Москву, прогуливаясь старинными улочками, посчитать звезды и найти клад!",
+        "price": " 8900 ₽ ",
+        "img_url": "https://resize.tripster.ru/hK17orGlSJGRAaU-H1lULyq7LP0=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/8d8ff0c9-dc36-4b84-a6f8-4723d27791fe.jpg",
+        "reviews": " 53 отзыва ",
+        "rating": "4.89"
+    },
+    {
+        "title": "9 секретов Никольской улицы ",
+        "text": "Весёлая и познавательная прогулка-игра",
+        "price": " 8200 ₽ ",
+        "img_url": "https://resize.tripster.ru/L3NjcnkkWd1bDdY3gsuwd7Empcc=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/dbf8c4b1-aa4b-4c13-89e0-ac8d4477b3bb.jpg",
+        "reviews": " 17 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Женские истории Москвы ",
+        "text": "Погулять по улицам столицы и узнать о живших на них удивительных женщинах",
+        "price": " 2670 ₽ ",
+        "img_url": "https://resize.tripster.ru/z2bKxf2aGZo5tFBJA3e1KhOPaNM=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/b5c0eee5-f21d-49d2-bbde-17e8f9bd88e2.jpg",
+        "reviews": " 46 отзывов ",
+        "rating": "4.96"
+    },
+    {
+        "title": "Злачная Хитровка: бизнес на ночлежках и роскошь по соседству ",
+        "text": "Исследовать скандальный район и выяснить, что скрывали стены его домов",
+        "price": " 8000 ₽ ",
+        "img_url": "https://resize.tripster.ru/1C3a4RJ6HyNpqBStZ-wjwDrUgDo=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/f00e71f4-99fb-43e1-b9a9-eb3788e68cec.jpg",
+        "reviews": " 35 отзывов ",
+        "rating": "4.8"
+    },
+    {
+        "title": "Новодевичье кладбище: некрополь советской элиты. Индивидуальная экскурсия ",
+        "text": "Раскрыть истории знаменитых людей, хранимые памятниками и надгробиями",
+        "price": " 3990 ₽ ",
+        "img_url": "https://resize.tripster.ru/BkCB6XIdRf-ecBxvhn84ukr-a14=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/16c4fd02-bf1c-428f-a8da-0a5de250c2d3.jpg",
+        "reviews": " 263 отзыва ",
+        "rating": "4.98"
+    },
+    {
+        "title": "«Тайны Красной площади»: экскурсия-квест для детей ",
+        "text": "Услышать истории средневековой Москвы, отгадать загадки и получить сувенир",
+        "price": " 7500 ₽ ",
+        "img_url": "https://resize.tripster.ru/X8T4hjvL7jGDA58t2H3igBUKqYc=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/efc60eec-f7a6-4a79-b27a-cb605bf9fed6.jpg",
+        "reviews": " 157 отзывов ",
+        "rating": "4.93"
+    },
+    {
+        "title": "Прогулка по Пушкинскому музею: шедевры основной экспозиции ",
+        "text": "Разобраться в искусстве древних цивилизаций, мастеров Ренессанса или творцов Северного Возрождения",
+        "price": " 7200 ₽ ",
+        "img_url": "https://resize.tripster.ru/gGNULc1V2ia8s4t26YdfSswXgPs=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/773bfe6d-9bd7-4cc1-9ecf-20b0b1244dc1.jpg",
+        "reviews": " 18 отзывов ",
+        "rating": "4.83"
+    },
+    {
+        "title": "Секреты Ивановской горки ",
+        "text": "Исследовать один из старейших районов Москвы и раскрыть историю его знаковых мест",
+        "price": " 800 ₽ ",
+        "img_url": "https://resize.tripster.ru/F-tHDJ397mLwXS2ZFeJhY2BPC1M=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/4eff9dcf-c667-43d1-8d52-a9bafddea97a.jpg",
+        "reviews": " 77 отзывов ",
+        "rating": "4.97"
+    },
+    {
+        "title": "У Петровских ворот: архитектурные истории Москвы ",
+        "text": "Пройти по бульварам и дворикам и изучить архитектурные стили",
+        "price": " 1350 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/0345bb80-6fac-11ef-8566-7acbc516a3d1.800x600.jpeg",
+        "reviews": " 6 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Мастер-класс по дубайскому шоколаду в Москве ",
+        "text": "Погрузиться в мир кондитерского искусства на легендарной фабрике «Красный Октябрь»",
+        "price": " 10 500 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/a61d055a-d822-11ef-ac85-da3212eb1a32.800x600.jpeg",
+        "reviews": " 10 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "«‎Кинопанорама»: прогулка по местам съёмок советских фильмов ",
+        "text": "Увидеть, как создавались шедевры отечественного кино, и наконец-то узнать, где находится нофелет",
+        "price": " 1000 ₽ ",
+        "img_url": "https://resize.tripster.ru/ubfapYryzHG1nRPWD4SFR9S8HUI=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/a64fd859-8bf6-434e-bd93-1085b0c9f652.jpg",
+        "reviews": " 182 отзыва ",
+        "rating": "4.92"
+    },
+    {
+        "title": "Старая Москва: Ивановская горка и Хитровка ",
+        "text": "Погулять по древнейшему району города и раскрыть его тайны с профессиональным гидом",
+        "price": " 667 ₽ ",
+        "img_url": "https://resize.tripster.ru/xsMb4vTcecM_y8INbFPFKKSMkok=/fit-in/600x800/filters:no_upscale()/https://cdn.tripster.ru/photos/719e7276-7596-4e76-abe7-d8c160691636.jpg",
+        "reviews": " 203 отзыва ",
+        "rating": "4.98"
+    },
+    {
+        "title": "Переделкино с местным жителем и членом Союза писателей ",
+        "text": "Душевная прогулка по легендарному дачному посёлку, где вместо стен живут окна",
+        "price": " 8000 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/946a4796-b0ae-11ef-9787-0667d384a1f5.800x600.jpeg",
+        "reviews": " 46 отзывов ",
+        "rating": "4.98"
+    },
+    {
+        "title": "Москва непарадная, приветливая, милая. Индивидуальная экскурсия ",
+        "text": "История и достопримечательности малоизвестных переулков столицы на дружеской экскурсии",
+        "price": " 2500 ₽ ",
+        "img_url": "https://resize.tripster.ru/4OrZSgHw0lvglB4jqPdxZzrVzVo=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/bbc93016-224f-4962-91b1-55d57bcf8588.jpg",
+        "reviews": " 382 отзыва ",
+        "rating": "4.98"
+    },
+    {
+        "title": "Нечистые Чистые: экскурсия-фотосессия ",
+        "text": "Прогуляться по чистопрудным переулкам и увидеть переплетение помпезности, масонства и андеграунда",
+        "price": " 7000 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/fb757460-8ecc-11ee-a24b-9a012b1bca7a.800x600.jpeg",
+        "reviews": " 28 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Новодевичий некрополь: постояльцы и их истории ",
+        "text": "Прикоснуться к тайнам могил великих и узнать больше о самом красивом женском монастыре в Москве",
+        "price": " 1200 ₽ ",
+        "img_url": "https://resize.tripster.ru/65tGIYi0CFBzYsqTbkesgQCqLnY=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/f44070d9-a426-42a2-9915-8b47bafb6a9c.jpg",
+        "reviews": " 287 отзывов ",
+        "rating": "4.95"
+    },
+    {
+        "title": "Групповая экскурсия в особняк Рябушинского ",
+        "text": "Изучить снаружи и изнутри шедевр Федора Шехтеля и подняться по «той самой» лестнице",
+        "price": " 1999 ₽ ",
+        "img_url": "https://resize.tripster.ru/PjjmzELpVDmCnhmaJDx5MXTKuaA=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/948181b3-52f7-4913-8ca2-35329d7d0914.jpg",
+        "reviews": " 56 отзывов ",
+        "rating": "4.66"
+    },
+    {
+        "title": "Китай-город: по следам учёных и торговцев ",
+        "text": "Прогуляться по заповедным улочкам «Великого посада» и услышать любопытные сюжеты из жизни столицы",
+        "price": " 2000 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/5bf41450-7513-11ee-8857-8674f5452a32.800x600.jpeg",
+        "reviews": " 7 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Тайны Лубянки ",
+        "text": "Мрачная история известной площади",
+        "price": " 5000 ₽ ",
+        "img_url": "https://resize.tripster.ru/Xxjw0yHqAVSMQUpWH2MUBvBWG1A=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/0a90f0f3-3a26-4ce2-8c74-21c4f23d7295.jpg",
+        "reviews": " 78 отзывов ",
+        "rating": "4.96"
+    },
+    {
+        "title": "Вокруг Дома на набережной с его жителем ",
+        "text": "Узнать об истории и жителях легендарного здания, а также о соседних старинных палатах и ГЭС-2",
+        "price": " 5000 ₽ ",
+        "img_url": "https://resize.tripster.ru/XqgpAhMoNZ3Fh7hJVXa4q2sz3WA=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/c3203f21-73cf-43ea-bb15-4df8279d3e0c.jpg",
+        "reviews": " 67 отзывов ",
+        "rating": "4.96"
+    },
+    {
+        "title": "ВДНХ — зеркало истории СССР ",
+        "text": "Раскрыть тайны знаменитой выставки, расшифровать символику плана и услышать сюжеты о скульптурах",
+        "price": " 7500 ₽ ",
+        "img_url": "https://resize.tripster.ru/z5NCnbZAIxyPYRFtNhCpDqRwwJY=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/1b37611a-4695-4b1c-9c11-bdbc3d7cc7df.jpg",
+        "reviews": " 24 отзыва ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Середниково — родовое гнездо Лермонтовых ",
+        "text": "Прогуляться по ландшафтному парку, слушая стихи юного поэта, и приоткрыть историю изящной усадьбы",
+        "price": " 5350 ₽ ",
+        "img_url": "https://resize.tripster.ru/hnlLT_0wnH_-Ji016wBFrPrn8Ac=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/96814350-6840-4e80-9968-34b23574432b.jpg",
+        "reviews": " 8 отзывов ",
+        "rating": "4.88"
+    },
+    {
+        "title": "«Рукописи не горят»: по следам Мастера и Маргариты ",
+        "text": "Разгадать тайны мистического романа и увидеть город глазами Булгакова",
+        "price": " 12 000 ₽ ",
+        "img_url": "https://resize.tripster.ru/Eup5Qbd912JqsSvEoAa1Y_rPGYk=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/878c652f-1242-4f11-86f6-ca743df45760.jpg",
+        "reviews": " 11 отзывов ",
+        "rating": "4.73"
+    },
+    {
+        "title": "Покровка со вкусом — увидеть и распробовать ",
+        "text": "Прогуляться уютным московским маршрутом и заскочить в бар за «архитектурным» коктейлем",
+        "price": " 8000 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/f5738bec-e9e0-11ed-bc2f-9edf05326d0b.800x600.jpeg",
+        "reviews": " 5 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Будни Красной площади — групповая экспресс-экскурсия ",
+        "text": "Изучить главный символ Москвы за 60 минут",
+        "price": " 667 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/a9a48632-02d8-11ef-aa20-a29dd54b9c07.800x600.jpeg",
+        "reviews": " 62 отзыва ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Где жили в Москве: доходные дома начала 20 века ",
+        "text": "Узнать, как и когда многоэтажки стали привычной частью нашей жизни",
+        "price": " 801 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/977ab258-7743-11ef-82ea-2e0855b1c655.800x600.jpeg",
+        "reviews": " 7 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Групповая прогулка по Старому Арбату — от начала и до конца ",
+        "text": "Историко-архитектурный променад по главной пешеходной улице города",
+        "price": " 800 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/57594634-7830-11ee-a2ae-6a8a1abfd75a.800x600.jpeg",
+        "reviews": " 15 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Гостиница «Украина» снаружи и изнутри ",
+        "text": "Посетить одну из сталинских высоток и узнать о ней интересные факты с профессиональным гидом",
+        "price": " 5500 ₽ ",
+        "img_url": "https://resize.tripster.ru/tV5TpEG7EAoxdxuRICWaVu5LJp0=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/4dd6f058-563a-451a-9866-4686af0cdfb8.jpg",
+        "reviews": " 49 отзывов ",
+        "rating": "4.98"
+    },
+    {
+        "title": "Царицыно: от Черной грязи до элитных дач ",
+        "text": "Посетить знаменитый дворцово-парковый ансамбль и раскрыть его тайны",
+        "price": " 7000 ₽ ",
+        "img_url": "https://resize.tripster.ru/d1iz26hwYP0hIF7qJmG82Hawb6k=/fit-in/800x600/filters:no_upscale()/https://cdn.tripster.ru/photos/e8b5195a-02b6-4afc-9ae9-ff1e18a0bc15.jpg",
+        "reviews": " 50 отзывов ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Москва кабаков и притонов (18+) ",
+        "text": "Прогулка по вечерней столице с дегустацией знаменитой «Кончаловки» (в группе)",
+        "price": " 1100 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/ca7af3a4-3470-11ef-bbe4-de43a11dd712.800x600.jpeg",
+        "reviews": " 17 отзывов ",
+        "rating": "4.94"
+    },
+    {
+        "title": "Запретная Москва: район красных фонарей (18+) ",
+        "text": "Исследовать улицы и проходные дворы, некогда гремевшие на всю столицу",
+        "price": " 6500 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/b78dfd00-74fd-11ee-b224-3658483c71e6.800x600.jpeg",
+        "reviews": " 23 отзыва ",
+        "rating": "5.0"
+    },
+    {
+        "title": "Детский квест-приключение «Тайны вокруг Кремля» ",
+        "text": "Пожать руку Москве, разгадать загадки прошлого и получить призы",
+        "price": " 6800 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/736b0898-b099-11ee-9e73-c2e32e272dba.800x600.jpeg",
+        "reviews": " 32 отзыва ",
+        "rating": "4.97"
+    },
+    {
+        "title": "Групповая прогулка по московским местам «Мастера и Маргариты» ",
+        "text": "Пройти путём булгаковских героев и оживить в памяти страницы «закатного» романа",
+        "price": " 900 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/81f9ae60-1f1b-11ee-b9b2-a65e675b710b.800x600.jpeg",
+        "reviews": " 92 отзыва ",
+        "rating": "4.93"
+    },
+    {
+        "title": "Сделано в Замоскворечье, или Дожить до редевелопмента ",
+        "text": "Открыть район, славящийся купеческими домами и храмами, с неожиданной стороны",
+        "price": " 1000 ₽ ",
+        "img_url": "https://cdn.tripster.ru/thumbs2/014d9968-3548-11ef-bcb3-5a3139e121a1.600x800.jpeg",
+        "reviews": " 7 отзывов ",
+        "rating": "5.0"
+    }
+]
