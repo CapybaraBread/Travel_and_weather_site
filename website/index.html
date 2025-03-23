@@ -9,86 +9,218 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shantell+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
+<body class="page">
+    <header class="header">
         <div class="hero-image" style="background: url('media/imge/Kostroma/Kostroma.png') center/cover no-repeat;">
             <div class="hero-text">
-                <h1>Открой для себя Кострому</h1>
-                <p>Все самое интересное в одном месте: погода и лучшие экскурсии!</p>
+                <h1 class="hero-text__title">Открой для себя Кострому</h1>
+                <p class="hero-text__subtitle">Все самое интересное в одном месте: погода и лучшие экскурсии!</p>
             </div>
-            <nav>
-                <a href="#contact"><i class="fas fa-envelope"></i> Контакты</a>
-                <a href="#"><i class="fas fa-comments"></i> Отзывы</a>
-                <a href="#weather"><i class="fas fa-sun"></i> Погода</a>
+            <nav class="nav">
+                <a href="#contact" class="nav__link"><i class="fas fa-envelope"></i> Контакты</a>
+                <a href="#" class="nav__link"><i class="fas fa-comments"></i> Отзывы</a>
+                <a href="#weather" class="nav__link"><i class="fas fa-sun"></i> Погода</a>
             </nav>
         </div>
     </header>
 
-    <section id="weather">
-        <h2>Погода Сейчас</h2>
-        <div class="weather-container">
-            <div class="weather-icon"><i class="fas fa-sun fa-5x"></i></div>
-            <div class="weather-info">
-                <p class="temperature">25°C</p>
-                <p class="condition">Ясно</p>
-                <p class="details">Влажность: 60% | Ветер: 5 м/с</p>
+    <section id="weather" class="weather">
+        <h2 class="weather__title">Погода Сейчас</h2>
+        <div class="weather__wrapper">
+            <div class="weather__current">
+                <div class="weather__container">
+                    <div class="weather__icon"><i class="fas fa-sun fa-5x"></i></div>
+                    <div class="weather__info">
+                        <p class="weather__temperature">25°C</p>
+                        <p class="weather__condition">Ясно</p>
+                        <p class="weather__details">Влажность: 60% | Ветер: 5 м/с</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather__forecast">
+                <h3 class="weather__forecast-title">Прогноз на 10 дней</h3>
+                <div class="weather__forecast-list">
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">Завтра</p>
+                        <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">10%</p>
+                        <p class="weather__forecast-temperature">26°C</p>
+                    </div>
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">12 Июня</p>
+                        <img src="media/imge/weather-icons/cloudy.svg" alt="Облачно" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">30%</p>
+                        <p class="weather__forecast-temperature">24°C</p>
+                    </div>
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">13 Июня</p>
+                        <img src="media/imge/weather-icons/rain.svg" alt="Дождь" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">70%</p>
+                        <p class="weather__forecast-temperature">20°C</p>
+                    </div>
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">14 Июня</p>
+                        <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">5%</p>
+                        <p class="weather__forecast-temperature">27°C</p>
+                    </div>
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">15 Июня</p>
+                        <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">5%</p>
+                        <p class="weather__forecast-temperature">27°C</p>
+                    </div>
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">16 Июня</p>
+                        <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">5%</p>
+                        <p class="weather__forecast-temperature">27°C</p>
+                    </div>
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">17 Июня</p>
+                        <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">5%</p>
+                        <p class="weather__forecast-temperature">27°C</p>
+                    </div>
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">18 Июня</p>
+                        <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">5%</p>
+                        <p class="weather__forecast-temperature">27°C</p>
+                    </div>
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">19 Июня</p>
+                        <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">5%</p>
+                        <p class="weather__forecast-temperature">27°C</p>
+                    </div>
+                    <div class="weather__forecast-item">
+                        <p class="weather__forecast-date">20 Июня</p>
+                        <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
+                        <p class="weather__forecast-probability">5%</p>
+                        <p class="weather__forecast-temperature">27°C</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="popular-excursions">
-        <h2>Популярные экскурсии</h2>
-        <h2>Кострома: Открой город заново</h2>
+    <section id="popular-excursions" class="excursions">
+        <h2 class="excursions__title">Популярные экскурсии</h2>
+        <h2 class="excursions__subtitle">Кострома: Открой город заново</h2>
         <div class="excursion-grid">
-            <div class="excursion-card detailed">
-                <img src="media/imge/Kostroma/Living_Gold.png" alt="'Живое Золото'- Рыбоводное хозяйство">
-                <h3>"Живое Золото"</h3>
-                <p>Взрослые и дети посетят рыбное хозяйство (23 тысячи кв. метров рыбоводных площадей), 
-                    где выращивается и перерабатывается рыба (560 тыс. тонн в год), производится красная и черная икра 
+            <div class="excursion-card">
+                <img src="media/imge/Kostroma/Living_Gold.png" alt="'Живое Золото'- Рыбоводное хозяйство" class="excursion-card__image">
+                <h3 class="excursion-card__title">"Живое Золото"</h3>
+                <p class="excursion-card__description">Взрослые и дети посетят рыбное хозяйство (23 тысячи кв. метров рыбоводных площадей),
+                    где выращивается и перерабатывается рыба (560 тыс. тонн в год), производится красная и черная икра
                     (4 тонны в год), деликатесы холодного и горячего копчения, балык из осетрина.</p>
-                <p class="price">от 1 500 ₽</p>
+                <div class="excursion-card__footer">
+                    <p class="excursion-card__price">от 1 500 ₽</p>
+                    <div class="excursion-card__rating">
+                        <span>4.2</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
             </div>
 
-            <div class="excursion-card detailed">
-                <img src="media/imge/img.png" alt="-">
-                <h3>Шоколадный мастер-класс</h3>
-                <p>Если Вы мечтали оказаться на шоколадной фабрике, то Вам сюда -  где  может исполниться детская мечта сладкоежки. 
+            <div class="excursion-card">
+                <img src="media/imge/img.png" alt="-" class="excursion-card__image">
+                <h3 class="excursion-card__title">Шоколадный мастер-класс</h3>
+                <p class="excursion-card__description">Если Вы мечтали оказаться на шоколадной фабрике, то Вам сюда -  где  может исполниться детская мечта сладкоежки.
                     Здесь  можно сделать собственными  руками конфеты , попробовать ароматную, теплую шоколадную массу.</p>
-                <p class="price">от 1200 ₽</p>
+                <div class="excursion-card__footer">
+                    <p class="excursion-card__price">от 1200 ₽</p>
+                    <div class="excursion-card__rating">
+                        <span>4.2</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
             </div>
 
-            <div class="excursion-card detailed">
-                <img src="media/imge/img.png" alt="-">
-                <h3>Шоколадный мастер-класс</h3>
-                <p>Если Вы мечтали оказаться на шоколадной фабрике, то Вам сюда -  где  может исполниться детская мечта сладкоежки. 
+            <div class="excursion-card">
+                <img src="media/imge/img.png" alt="-" class="excursion-card__image">
+                <h3 class="excursion-card__title">Шоколадный мастер-класс</h3>
+                <p class="excursion-card__description">Если Вы мечтали оказаться на шоколадной фабрике, то Вам сюда -  где  может исполниться детская мечта сладкоежки.
                     Здесь  можно сделать собственными  руками конфеты , попробовать ароматную, теплую шоколадную массу.</p>
-                <p class="price">от 1200 ₽</p>
+                <div class="excursion-card__footer">
+                    <p class="excursion-card__price">от 1200 ₽</p>
+                    <div class="excursion-card__rating">
+                        <span>4.2</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
             </div>
 
-            <div class="excursion-card detailed">
-                <img src="media/imge/Kostroma/Chocolate.png" alt="Шоколадный мастер-класс">
-                <h3>Шоколадный мастер-класс</h3>
-                <p>Если Вы мечтали оказаться на шоколадной фабрике, то Вам сюда -  где  может исполниться детская мечта сладкоежки. 
-                    Здесь  можно сделать собственными  руками конфеты , попробовать ароматную, теплую шоколадную массу.</p>
-                <p class="price">от 1200 ₽</p>
+            <div class="excursion-card">
+                <img src="media/imge/Kostroma/Chocolate.png" alt="Шоколадный мастер-класс" class="excursion-card__image">
+                <h3 class="excursion-card__title">Шоколадный мастер-класс</h3>
+                <p class="excursion-card__description">Если Вы мечтали оказаться на шоколадной фабрике, то Вам сюда -  где  может исполниться детская мечта сладкоежки.
+Здесь  можно сделать собственными  руками конфеты , попробовать ароматную, теплую шоколадную массу.</p>
+                <div class="excursion-card__footer">
+                    <p class="excursion-card__price">от 1200 ₽</p>
+                    <div class="excursion-card__rating">
+                        <span>4.2</span>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
             </div>
     </section>
 
-    <section id="content">
+    <section id="content" class="content">
         <div class="footer-content">
-            <section id="contact">
+            <section id="contact" class="contact">
                 <div class="contact-info">
-                    <h3>Контакты</h3>
-                    <p><i class="fas fa-envelope"></i> excursion@example.com</p>
+                    <h3 class="contact-info__title">Свяжитесь с нами</h3>
+                    <p class="contact-info__description">Будем рады ответить на ваши вопросы и предложения.</p>
+                    <div class="contact-details">
+                        <p class="contact-details__item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:excursion@example.com">excursion@example.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-info__social">
+                        <a href="#" target="_blank" class="contact-info__social-link">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" target="_blank" class="contact-info__social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Кострома: Открой город заново</p>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h4 class="footer__title">О нас</h4>
+                <p>Мы предлагаем лучшие экскурсии и актуальную информацию о погоде в Костроме.</p>
+            </div>
+            <div class="footer__section">
+                <h4 class="footer__title">Полезные ссылки</h4>
+                <ul class="footer__list">
+                    <li><a href="#">Экскурсии</a></li>
+                    <li><a href="#">Погода</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h4 class="footer__title">Подпишитесь</h4>
+                <p>Получайте свежие обновления и специальные предложения!</p>
+                <form class="footer__form">
+                    <input type="email" placeholder="Ваш email">
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+        <p class="footer__copyright">&copy; 2025 Кострома: Открой город заново</p>
     </footer>
 </body>
 </html>
