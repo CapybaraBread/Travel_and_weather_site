@@ -44,7 +44,7 @@ async def send_weather(update: Update, context):
 
         if response.status_code == 200:
             await update.message.reply_text(
-                f"🌤 Погода для {city} готова! Смотри подробности здесь: https://msk.durka.keenetic.pro/"
+                f"🌤 Погода для {city} готова! Смотри подробности здесь: https://msk.durka.keenetic.pro/website/"
             )
         else:
             await update.message.reply_text("❌ Ошибка при получении данных о погоде.")
