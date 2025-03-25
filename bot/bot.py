@@ -9,7 +9,6 @@ load_dotenv()
 API_TOKEN = os.getenv("API_TOKEN")
 YANDEX_WEATHER_TOKEN = os.getenv("YANDEX_WEATHER_TOKEN")
 
-
 CITIES = {
     "Москва": (55.7558, 37.6173),
     "Санкт-Петербург": (59.9343, 30.3351),
@@ -22,14 +21,17 @@ CITIES = {
     "Воронеж": (51.6755, 39.2089),
     "Смоленск": (54.7826, 32.0453),
     "Кострома": (57.8029, 40.9900)
-
 }
 
 
 async def start(update: Update, context):
     keyboard = [[city] for city in CITIES]
     markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
-    await update.message.reply_text("Выберите город:", reply_markup=markup)
+    welcome_text = (
+        "👋 Приветствую тебя, искатель прогноза! Я — бот-метеоролог, готовый рассказать тебе о погоде в городах России."
+        "\n\nВыбери город ниже, чтобы получить актуальную информацию о погоде."
+    )
+    await update.message.reply_text(welcome_text, reply_markup=markup)
 
 
 async def send_weather(update: Update, context):
@@ -41,15 +43,13 @@ async def send_weather(update: Update, context):
         response = requests.get(url, headers=headers)
 
         if response.status_code == 200:
-            with open("weather.json", "w", encoding="utf-8") as file:
-                json.dump(response.json(), file, ensure_ascii=False, indent=4)
-
-            await update.message.reply_document(open("weather.json", "rb"))
+            await update.message.reply_text(
+                f"🌤 Погода для {city} готова! Смотри подробности здесь: https://msk.durka.keenetic.pro/"
+            )
         else:
-            await update.message.reply_text("Ошибка при получении данных")
+            await update.message.reply_text("❌ Ошибка при получении данных о погоде.")
     else:
-        await update.message.reply_text("Выберите город из списка")
-
+        await update.message.reply_text("Пожалуйста, выбери город из списка кнопок 👇")
 
 
 def main():
