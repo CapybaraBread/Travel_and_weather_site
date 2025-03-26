@@ -28,8 +28,9 @@ async def start(update: Update, context):
     keyboard = [[city] for city in CITIES]
     markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
     welcome_text = (
-        "👋 Приветствую тебя, искатель прогноза! Я — бот-метеоролог, готовый рассказать тебе о погоде в городах России."
-        "\n\nВыбери город ниже, чтобы получить актуальную информацию о погоде."
+        "👋 Приветствую тебя, искатель прогноза!\n"
+        "Я — бот-метеоролог, готовый рассказать тебе о погоде в городах России.\n\n"
+        "Выбери город ниже, чтобы получить актуальную информацию о погоде."
     )
     await update.message.reply_text(welcome_text, reply_markup=markup)
 
@@ -43,8 +44,14 @@ async def send_weather(update: Update, context):
         response = requests.get(url, headers=headers)
 
         if response.status_code == 200:
+            weather_data = response.json()
+            file_name = "weather.json"
+            with open(file_name, "w", encoding="utf-8") as file:
+                json.dump(weather_data, file, ensure_ascii=False, indent=4)
+
             await update.message.reply_text(
-                f"🌤 Погода для {city} готова! Смотри подробности здесь: https://msk.durka.keenetic.pro/website/"
+                f"🌤 Погода для {city} получена и сохранена.\n"
+                "Смотри подробности здесь: https://msk.durka.keenetic.pro/website/"
             )
         else:
             await update.message.reply_text("❌ Ошибка при получении данных о погоде.")
