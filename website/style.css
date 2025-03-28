@@ -216,11 +216,6 @@ a:hover {
     font-weight: 500;
 }
 
-.weather__condition {
-    font-size: 1em;
-    color: #777;
-}
-
 .weather__details {
     font-size: 0.8em;
     color: #888;
@@ -274,6 +269,7 @@ a:hover {
 }
 
 .excursion-card__description {
+    color: #333;
     padding: 0.8em;
     text-align: left;
     font-size: 0.95em;
