@@ -37,6 +37,7 @@ a:hover {
 }
 
 .hero-image {
+    background: url('media/imge/City.png') center/cover no-repeat;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -51,7 +52,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Затемнение */
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -83,7 +84,7 @@ a:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%; /* Исправлено */
+    width: 100%;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -108,7 +109,7 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 2em;
     border-radius: 10px;
-    color: #333; /* Цвет текста для контраста с фоном */
+    color: #333;
 }
 
 .weather__title {
@@ -124,7 +125,7 @@ a:hover {
 }
 
 .weather__current {
-    width: 45%; /* Занимает всю ширину на мобильных */
+    width: 45%;
     text-align: center;
     margin-bottom: 1em;
     border-radius: 10px;
@@ -134,7 +135,7 @@ a:hover {
 }
 
 .weather__forecast {
-    width: 45%; /* Занимает всю ширину на мобильных */
+    width: 45%;
     text-align: center;
     padding: 1em;
     border-radius: 8px;
@@ -149,23 +150,23 @@ a:hover {
 }
 
 .weather__forecast-list {
-    display: grid; /* Меняем flex на grid */
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); /* Автоматическое размещение в колонки */
-    gap: 0.5em; /* Отступы между элементами */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 0.5em;
     padding: 0.5em;
-    overflow: hidden; /* Скрываем все, что не помещается */
-    justify-content: center; /* Центрируем элементы */
+    overflow: hidden;
+    justify-content: center;
 }
 
 .weather__forecast-item {
-    flex: 0 0 auto; /* Не сжиматься и не расширяться, занимать заданную ширину */
-    width: auto; /* Автоматическая ширина */
+    flex: 0 0 auto;
+    width: auto;
     text-align: center;
     padding: 0.5em;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    margin: 0; /* Убираем отступы, т.к. используем gap */
+    margin: 0;
     white-space: nowrap;
     color: #333;
 }
@@ -238,7 +239,7 @@ a:hover {
 }
 
 .excursion-card {
-    position: relative; /* Добавлено */
+    position: relative;
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
@@ -275,38 +276,38 @@ a:hover {
     font-size: 0.95em;
     line-height: 1.4;
     margin-bottom: 45px;
-    min-height: 100px; /* Add a minimum height to the description */
+    min-height: 100px;
 }
 
 .excursion-card__footer {
-    position: absolute; /*  Абсолютное позиционирование */
-    bottom: 0;           /* Прижимаем к низу */
-    left: 0;             /* Прижимаем к левому краю */
-    width: 100%;           /*  Занимаем всю ширину */
-    display: flex;       /*  Используем flexbox для расположения цены и рейтинга */
-    justify-content: space-between; /* Размещаем элементы по краям */
-    align-items: center;   /*  Выравниваем элементы по вертикали */
-    padding: 0.5em 0.8em;  /*  Отступы */
-    background: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
-    color: white;          /* Белый текст */
-    box-sizing: border-box; /*  Чтобы padding не увеличивал общую ширину */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0.8em;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    box-sizing: border-box;
 }
 
 .excursion-card__price {
     font-weight: 500;
     font-size: 1em;
-    margin: 0;          /* Убираем стандартные отступы */
+    margin: 0;
 }
 
 .excursion-card__rating {
-    display: flex;       /*  Отображаем рейтинг в строку (число и звезда) */
-    align-items: center;   /*  Выравниваем число и звезду по вертикали */
-    font-size: 0.9em;      /*  Уменьшаем размер рейтинга */
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
 }
 
 .excursion-card__rating i {
-    margin-left: 0.3em;  /*  Расстояние между числом и звездой */
-    color: #ffc107;      /*  Желтый цвет звезды (как вариант) */
+    margin-left: 0.3em;
+    color: #ffc107;
 }
 /* Pagination Styles */
 .pagination {
@@ -345,28 +346,28 @@ a:hover {
 .footer {
     background-color: #34495e;
     color: rgb(255, 255, 255);
-    padding: 3em 0; /* Увеличим отступы сверху и снизу */
+    padding: 3em 0;
 }
 
 .footer__container {
     display: flex;
-    justify-content: space-around; /* Размещаем секции равномерно */
-    flex-wrap: wrap; /* Переносим секции на новую строку, если не помещаются */
-    max-width: 1200px; /* Задаем максимальную ширину контейнера */
-    margin: 0 auto; /* Центрируем контейнер */
-    padding: 0 2em; /* Добавляем отступы по бокам */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
 }
 
 .footer__section {
-    width: 30%; /* Каждая секция занимает 30% ширины */
-    min-width: 250px; /* Минимальная ширина для секции */
-    margin-bottom: 2em; /* Отступ снизу */
+    width: 30%;
+    min-width: 250px;
+    margin-bottom: 2em;
 }
 
 .footer__title {
     font-size: 1.2em;
     margin-bottom: 0.8em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Добавляем разделительную линию */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 0.5em;
 }
 
@@ -423,7 +424,7 @@ a:hover {
 
 /* Content Section */
 .content {
-    background-color: #F4F4F4; /* Светлый фон для контраста */
+    background-color: #F4F4F4;
     padding: 2em 0;
 }
 
@@ -507,7 +508,7 @@ a:hover {
 /* Media Queries (Адаптивность) */
 @media (max-width: 768px) {
     .contact-info {
-        width: 95%; /* Увеличиваем ширину на маленьких экранах */
+        width: 95%;
         padding: 1.5em;
     }
 
@@ -516,7 +517,7 @@ a:hover {
     }
 
     .contact-info__social {
-        gap: 1em; /* Уменьшаем отступы между иконками */
+        gap: 1em;
     }
 
     .contact-info__social-link {
