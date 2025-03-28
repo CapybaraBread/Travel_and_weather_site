@@ -52,9 +52,6 @@ async def send_weather(update: Update, context):
             coords_to_city = {v: k for k, v in CITIES.items()}
             cleaned_data = {
                 "name": coords_to_city.get((lat, lon), "Неизвестный город"),
-                "humidity": weather_data["fact"]["humidity"],
-                "wind_speed": weather_data["fact"]["wind_speed"],
-                "condition": weather_data["fact"]["condition"],
                 "forecast": []
             }
 
@@ -62,7 +59,9 @@ async def send_weather(update: Update, context):
                 cleaned_data["forecast"].append({
                     "date": day["date"],
                     "temp_avg": day["parts"]["day"].get("temp_avg"),
-                    "condition": day["parts"]["day"].get("condition")
+                    "condition": day["parts"]["day"].get("condition"),
+                    "humidity": day["parts"]["day"].get("humidity"),
+                    "wind_speed": day["parts"]["day"].get("wind_speed"),
                 })
 
             with open(file_name, "w", encoding="utf-8") as file:
