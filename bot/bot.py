@@ -55,11 +55,33 @@ async def send_weather(update: Update, context):
                 "forecast": []
             }
 
+            condition_translation = {
+                "clear": "ясно",
+                "partly-cloudy": "малооблачно",
+                "cloudy": "облачно с прояснениями",
+                "overcast": "пасмурно",
+                "drizzle": "морось",
+                "light-rain": "небольшой дождь",
+                "rain": "дождь",
+                "moderate-rain": "умеренный дождь",
+                "heavy-rain": "сильный дождь",
+                "continuous-heavy-rain": "длительный сильный дождь",
+                "showers": "ливень",
+                "wet-snow": "дождь со снегом",
+                "light-snow": "небольшой снег",
+                "snow": "снег",
+                "snow-showers": "снегопад",
+                "hail": "град",
+                "thunderstorm": "гроза",
+                "thunderstorm-with-rain": "дождь с грозой",
+                "thunderstorm-with-hail": "гроза с градом"
+            }
+
             for day in weather_data.get("forecasts", [])[:7]:
                 cleaned_data["forecast"].append({
                     "date": day["date"],
                     "temp_avg": day["parts"]["day"].get("temp_avg"),
-                    "condition": day["parts"]["day"].get("condition"),
+                    "condition": condition_translation.get(day["parts"]["day"].get("condition"), "неизвестно"),
                     "humidity": day["parts"]["day"].get("humidity"),
                     "wind_speed": day["parts"]["day"].get("wind_speed"),
                 })
