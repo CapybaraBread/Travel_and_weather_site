@@ -49,9 +49,49 @@ async def send_weather(update: Update, context):
             with open(file_name, "w", encoding="utf-8") as file:
                 json.dump(weather_data, file, ensure_ascii=False, indent=4)
 
+            coords_to_city = {v: k for k, v in CITIES.items()}
+            cleaned_data = {
+                "name": coords_to_city.get((lat, lon), "Неизвестный город"),
+                "forecast": []
+            }
+
+            condition_translation = {
+                "clear": "ясно",
+                "partly-cloudy": "малооблачно",
+                "cloudy": "облачно с прояснениями",
+                "overcast": "пасмурно",
+                "drizzle": "морось",
+                "light-rain": "небольшой дождь",
+                "rain": "дождь",
+                "moderate-rain": "умеренный дождь",
+                "heavy-rain": "сильный дождь",
+                "continuous-heavy-rain": "длительный сильный дождь",
+                "showers": "ливень",
+                "wet-snow": "дождь со снегом",
+                "light-snow": "небольшой снег",
+                "snow": "снег",
+                "snow-showers": "снегопад",
+                "hail": "град",
+                "thunderstorm": "гроза",
+                "thunderstorm-with-rain": "дождь с грозой",
+                "thunderstorm-with-hail": "гроза с градом"
+            }
+
+            for day in weather_data.get("forecasts", [])[:7]:
+                cleaned_data["forecast"].append({
+                    "date": day["date"],
+                    "temp_avg": day["parts"]["day"].get("temp_avg"),
+                    "condition": condition_translation.get(day["parts"]["day"].get("condition"), "неизвестно"),
+                    "humidity": day["parts"]["day"].get("humidity"),
+                    "wind_speed": day["parts"]["day"].get("wind_speed"),
+                })
+
+            with open(file_name, "w", encoding="utf-8") as file:
+                json.dump(cleaned_data, file, ensure_ascii=False, indent=4)
+
             await update.message.reply_text(
                 f"🌤 Погода для {city} получена и сохранена.\n"
-                "Смотри подробности здесь: https://msk.durka.keenetic.pro/website/"
+                "Смотри подробности здесь: http://127.0.0.1:8000"
             )
         else:
             await update.message.reply_text("❌ Ошибка при получении данных о погоде.")
