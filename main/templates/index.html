@@ -14,7 +14,7 @@
 </head>
 <body class="page">
     <header class="header">
-        <div class="hero-image" style="background: url({% static 'img/Kostroma/Kostroma.png'%}) center/cover no-repeat;">
+        <div class="hero-image" style="background: url({% static 'img/City.png'%}) center/cover no-repeat;">
             <div class="hero-overlay"></div>
             <div class="hero-text">
                 <h1 class="hero-text__title">Открой для себя новый город {{town.name}}</h1>
@@ -29,6 +29,7 @@
         </div>
     </header>
 
+
     <section id="weather" class="weather">
         <div class="container">
             <h2 class="weather__title">Погода Сейчас</h2>
@@ -37,55 +38,42 @@
                     <div class="weather__container">
                         <div class="weather__icon"><i class="fas fa-sun fa-5x"></i></div>
                         <div class="weather__info">
-                            <p class="weather__temperature">{{weather.0.parts.day.temp_avg}}°C</p>
-                            <p class="weather__details">Влажность: {{weather.0.parts.day.humidity}}% | Ветер: {{weather.0.parts.day.wind_speed}} м/с</p>
+                            <p class="weather__temperature">{{weather.0.temp_avg}}°C</p>
+                            <p class="weather__details">Влажность: {{weather.0.humidity}}% | Ветер: {{weather.0.wind_speed}} м/с</p>
                         </div>
                     </div>
                 </div>
                 <div class="weather__forecast">
-                    <h3 class="weather__forecast-title">Прогноз на 10 дней</h3>
+                    <h3 class="weather__forecast-title">Прогноз на 7 дней</h3>
                     <div class="weather__forecast-list">
-                        <div class="weather__forecast-item">
-                            <p class="weather__forecast-date">Завтра</p>
-                            <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
-                            <p class="weather__forecast-probability">{{weather.1.parts.day.humidity}}%</p>
-                            <p class="weather__forecast-temperature">{{weather.1.parts.day.temp_avg}}°C</p>
-                        </div>
-                        <div class="weather__forecast-item">
-                            <p class="weather__forecast-date">{{weather.2.date}}</p>
-                            <img src="media/imge/weather-icons/cloudy.svg" alt="Облачно" class="weather__forecast-icon">
-                            <p class="weather__forecast-probability">{{weather.2.parts.day.humidity}}%</p>
-                            <p class="weather__forecast-temperature">{{weather.2.parts.day.temp_avg}}°C</p>
-                        </div>
-                        <div class="weather__forecast-item">
-                            <p class="weather__forecast-date">{{weather.3.date}}</p>
-                            <img src="media/imge/weather-icons/rain.svg" alt="Дождь" class="weather__forecast-icon">
-                            <p class="weather__forecast-probability">{{weather.3.parts.day.humidity}}%</p>
-                            <p class="weather__forecast-temperature">{{weather.3.parts.day.temp_avg}}°C</p>
-                        </div>
-                        <div class="weather__forecast-item">
-                            <p class="weather__forecast-date">{{weather.4.date}}</p>
-                            <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
-                            <p class="weather__forecast-probability">{{weather.4.parts.day.humidity}}%</p>
-                            <p class="weather__forecast-temperature">{{weather.4.parts.day.temp_avg}}°C</p>
-                        </div>
-                        <div class="weather__forecast-item">
-                            <p class="weather__forecast-date">{{weather.5.date}}</p>
-                            <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
-                            <p class="weather__forecast-probability">{{weather.5.parts.day.humidity}}%</p>
-                            <p class="weather__forecast-temperature">{{weather.5.parts.day.temp_avg}}°C</p>
-                        </div>
-                        <div class="weather__forecast-item">
-                            <p class="weather__forecast-date">{{weather.6.date}}</p>
-                            <img src="media/imge/weather-icons/sun.svg" alt="Ясно" class="weather__forecast-icon">
-                            <p class="weather__forecast-probability">{{weather.6.parts.day.humidity}}%</p>
-                            <p class="weather__forecast-temperature">{{weather.6.parts.day.temp_avg}}°C</p>
-                        </div>
+                        {% for day in weather %}
+                            {% if day != weather.0 %}
+                                <div class="weather__forecast-item">
+                                    {% if day == weather.1 %}
+                                        <p class="weather__forecast-date">Завтра</p>
+                                    {%else%}
+                                        <p class="weather__forecast-date">{{day.date}}</p>
+                                    {%endif%}
+                                    {% if day.condition == "облачно с прояснениями" or day.condition == "пасмурно" or day.condition == "малооблачно"%}
+                                        <img src="{% static 'img/ico/weather-icons/ico-Cloud_cover.svg' %}" alt="Ясно" class="weather__forecast-icon">
+                                    {% elif day.condition == "морось" or day.condition == "небольшой дождь" or day.condition == "дождь" or day.condition == "умеренный дождь" or day.condition == "сильный дождь" or day.condition == "длительный сильный дождь" or day.condition == "ливень" or day.condition == "дождь с грозой" or day.condition == "гроза"%}
+                                        <img src="{% static 'img/ico/weather-icons/ico-Rainy_weather.svg' %}" alt="Ясно" class="weather__forecast-icon">
+                                    {% elif day.condition == "дождь со снегом" or day.condition == "небольшой снег" or day.condition == "небольшой снег" or day.condition == "снег" or day.condition == "снегопад" or day.condition == "град" or day.condition == "гроза с градом"%}
+                                        <img src="{% static 'img/ico/weather-icons/ico-Snow.svg' %}" alt="Ясно" class="weather__forecast-icon">
+                                    {% else %}
+                                        <img src="{% static 'img/ico/weather-icons/ico-Sunshine.svg' %}" alt="Ясно" class="weather__forecast-icon">
+                                    {%endif%}
+                                    <p class="weather__forecast-probability">{{day.humidity}}%</p>
+                                    <p class="weather__forecast-temperature">{{day.temp_avg}}°C</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="popular-excursions" class="excursions">
         <div class="container">
@@ -93,18 +81,16 @@
             <div class="excursion-grid">
                 {% for event in events %}
                     <div class="excursion-card">
-                            <a href="#">
-                                <img src="{{event.img_url}}" alt="'Живое Золото'- Рыбоводное хозяйство" class="excursion-card__image">
-                                <h3 class="excursion-card__title">{{event.title}}</h3>
-                                <p class="excursion-card__description">{{event.title}}</p>
-                                <div class="excursion-card__footer">
-                                    <p class="excursion-card__price">от {{event.price}}</p>
-                                    <div class="excursion-card__rating">
-                                        <span>{{event.rating}}</span>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </a>
+                        <img src="{{event.img_url}}" alt="'Живое Золото'- Рыбоводное хозяйство" class="excursion-card__image">
+                        <h3 class="excursion-card__title">{{event.title}}</h3>
+                        <p class="excursion-card__description">{{event.title}}</p>
+                        <div class="excursion-card__footer">
+                            <p class="excursion-card__price">от {{event.price}}</p>
+                            <div class="excursion-card__rating">
+                                <span>{{event.rating}}</span>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
                     </div>
                 {% endfor %}
             </div>
@@ -212,7 +198,6 @@
     </footer>
 
     <script>
-        // Код для модального окна отзывов
         const modal = document.getElementById("review-modal");
         const openModalButton = document.getElementById("open-review-modal");
         const closeModalButton = document.querySelector(".close-button");
@@ -237,7 +222,6 @@
             const name = document.getElementById("name").value;
             const comment = document.getElementById("comment").value;
 
-            // Создаем элемент отзыва
             const reviewElement = document.createElement("div");
             reviewElement.classList.add("review");
             reviewElement.innerHTML = `
@@ -245,14 +229,11 @@
                 <p>${comment}</p>
             `;
 
-            // Добавляем отзыв в контейнер
             reviewsContainer.appendChild(reviewElement);
 
-            // Очищаем форму
             document.getElementById("name").value = "";
             document.getElementById("comment").value = "";
 
-            // Закрываем модальное окно
             modal.style.display = "none";
         });
     </script>

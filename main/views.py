@@ -5,26 +5,26 @@ from bs4 import BeautifulSoup
 
 
 def show_pages(request, page=1):
+    with open("weather.json", "r", encoding="utf8") as json_file:
+        json_file = json.load(json_file)
+        weather = json_file["forecast"]
+        town = json_file["name"]
     towns = {
-        "Moscow": 'Москва',
-        'Saint_Petersburg': 'Санкт-Петербург',
-        'Novosibirsk': 'Новосибирск',
-        'Yekaterinburg': 'Екатеринбург',
-        'Kazan': 'Казань',
-        'Chelyabinsk': 'Челябинск',
-        'Omsk': 'Омск',
-        'Rostov-on-Don': 'Ростов-на-Дону',
-        'Voronezh': 'Воронеж',
-        'Smolensk': 'Смоленск',
-        'Kostroma': 'Кострома'
+        "Москва": "Moscow",
+        "Санкт-Петербург": "Saint_Petersburg",
+        "Новосибирск": "Novosibirsk",
+        "Екатеринбург": "Yekaterinburg",
+        "Казань": "Kazan",
+        "Челябинск": "Chelyabinsk",
+        "Омск": "Omsk",
+        "Ростов-на-Дону": "Rostov-on-Don",
+        "Воронеж": "Voronezh",
+        "Смоленск": "Smolensk",
+        "Кострома": "Kostroma"
     }
-    with open("weather.json", "r", encoding="utf8") as weather_file:
-
-        weather = json.load(weather_file)["forecasts"]
-    town = "Moscow"
-    url = f"https://experience.tripster.ru/experience/{town}/"
+    url = f"https://experience.tripster.ru/experience/{towns[town]}/"
     town_name = {
-        "name": towns[town]
+        "name": town
     }
     events = []
     params = {
